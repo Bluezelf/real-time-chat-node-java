@@ -1,0 +1,4 @@
+
+java-client/.idea/vcs.xml
+node client\node_modules
+node server\node_modules
