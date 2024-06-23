@@ -29,11 +29,15 @@ npm install
 node client.js
 ```
 ### Java Client
-1. Change the directory
+1. Compile
 ```bash
-cd node server
+Windows:javac -cp .;javax.websocket-api-1.1.jar;grizzly-framework-2.3.25.jar;grizzly-http-2.3.25.jar;grizzly-http-server-2.3.25.jar;tyrus-client-1.13.1.jar;tyrus-container-grizzly-client-1.13.1.jar;tyrus-core-1.13.1.jar;tyrus-server-1.13.1.jar;tyrus-spi-1.13.1.jar ChatClient.java
+
+Linux: javac -cp .:javax.websocket-api-1.1.jar:grizzly-framework-2.3.25.jar:grizzly-http-2.3.25.jar:grizzly-http-server-2.3.25.jar:tyrus-client-1.13.1.jar:tyrus-container-grizzly-client-1.13.1.jar:tyrus-core-1.13.1.jar:tyrus-server-1.13.1.jar:tyrus-spi-1.13.1.jar ChatClient.java
 ```
 2. Run
 ```bash
-mvn clean compile exec:java -Dexec.mainClass="com.example.ChatClient"
+Windows:java -cp .;javax.websocket-api-1.1.jar;grizzly-framework-2.3.25.jar;grizzly-http-2.3.25.jar;grizzly-http-server-2.3.25.jar;tyrus-client-1.13.1.jar;tyrus-container-grizzly-client-1.13.1.jar;tyrus-core-1.13.1.jar;tyrus-server-1.13.1.jar;tyrus-spi-1.13.1.jar ChatClient
+
+Linux:java -cp .:javax.websocket-api-1.1.jar:grizzly-framework-2.3.25.jar:grizzly-http-2.3.25.jar:grizzly-http-server-2.3.25.jar:tyrus-client-1.13.1.jar:tyrus-container-grizzly-client-1.13.1.jar:tyrus-core-1.13.1.jar:tyrus-server-1.13.1.jar:tyrus-spi-1.13.1.jar ChatClient
 ```
